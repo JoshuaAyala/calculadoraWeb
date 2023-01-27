@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="resources/css/main.css">
+    </head>
+    <body>
+        <center>
+            <h3>Calculadora</h3>
+            <div class="firstpanel">
+                <input type="text" id ="operation-handler" readonly>
+                <center>
+                    <ul class="buttons">
+                        <li id="(" class="button" onclick="addOperation('(')">(</li>
+                        <li id=")" class="button" onclick="addOperation(')')">)</li>
+                        <li id="cambiartipo" class="button" onclick="cambiarIntDecimal()">D</li>
+                        <li id="retroceder" class="button" onclick="retroceder()"><-</li>
+                    </ul>
+                    <ul class="buttons">
+                        <li id="suma" class="button" onclick="addOperation('+')">+</li>
+                        <li id="multiplicacion" class="button" onclick="addOperation('*')">*</li>
+                        <li id="resta" class="button" onclick="addOperation('-')">-</li>
+                        <li id="division" class="button" onclick="addOperation('/')">/</li>
+                    </ul>
+                    <ul class="buttons">
+                        <li id="7" class="button" onclick="addOperation(7)">7</li>
+                        <li id="8" class="button" onclick="addOperation(8)">8</li>
+                        <li id="9" class="button" onclick="addOperation(9)">9</li>
+                        <li id="CE" class="button" onclick="clearArray(1)">CE</li>
+                    </ul>
+                    <ul class="buttons">
+                        <li id="4" class="button" onclick="addOperation(4)">4</li>
+                        <li id="5" class="button" onclick="addOperation(5)">5</li>
+                        <li id="6" class="button" onclick="addOperation(6)">6</li>
+                        <li id="C" class="button" onclick="addOperation('.')">.</li>
+                    </ul>
+                    <ul class="buttons">
+                        <li id="1" class="button" onclick="addOperation(1)">1</li>
+                        <li id="2" class="button" onclick="addOperation(2)">2</li>
+                        <li id="3" class="button" onclick="addOperation(3)">3</li>
+                        <li id="resultado" class="button" onclick="resultado()">=</li>
+                    </ul>
+                </center>
+            </div>
+        </center>
+        <script src="resources/js/index.js"></script>
+    </body>
+</html>
