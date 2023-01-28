@@ -1,51 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body{
-    font-size: small;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #636e72;
+    font-family: 'Ubuntu', sans-serif;
 }
 
-h3{
-    font-size: 48px;
-    text-shadow: 0px 0px 3px;
+h3 {
+    margin: 50px;
 }
 
-.firstpanel{
-    max-width: 50%;
+.calculadora{
+    width: 30%;
+    padding: 0 0 20px 0;
+    background-color: #2d3436;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
 }
 
 .buttons{
-    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
     text-decoration: none;
+    list-style: none;
+    display: flex;
 }
 
-.button{
-    margin: 0;
-    padding: 0;
-    max-width: 20px;
-    max-height: 20px;
-    border: 1px;
-    border-style: solid;
-    display: inline-block;
-    padding: 15px 20px 15px  20px;
+.button {
+    color: #a0a6a8;
     margin: 10px;
-    vertical-align: middle !important;
-    text-align: center !important;
-    border-radius: 3px;
-    box-shadow: 0 0 5px;
+    cursor: pointer;
+    vertical-align: middle;
+    text-align: center;
+    align-self: center;
+    padding: 20px 30px;
+    width: 5%;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.644);
 }
 
 .button:hover{
-    transition: 0.3 ease;
-    cursor: pointer;
-    background-color: black;
-    color: white;
-    
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
 }
 
-input {
-    width: 200px;
-    outline: 0;
-    border-width: 0 0 1px;
-    border-color: black;
-    height: 50px;
-    margin-right: 5px;
+input{
+    grid-column: 1 / -1;
+    display: flex;
+    color: #a0a6a8;
+    font-size: 30px;
+    background-color: #17191a;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-style: none;
+    width: calc(100% - 60px);
+    height: 120px;
+    margin: 0px 0px 20px 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding: 0 30px 0 30px;
+    text-align: end;
+}
+
+@media screen and (max-width: 1228px){
+    .calculadora{
+        width: 50%;
+    }
+
+    .buttons{
+        padding-left: 10px;
+        padding-right: 10px;
+        flex-basis: 100%;
+    }
+
+    .button {
+        margin: 10px;
+        padding: 10px 20px;
+        width: 5%;
+        flex-basis: 100%;
+    }
+
+    input{
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 768px){
+	.calculadora{
+        width: 90%;
+    }
+
+    .buttons{
+        padding-left: 10px;
+        padding-right: 10px;
+        flex-basis: 100%;
+    }
+
+    .button {
+        margin: 10px;
+        padding: 10px 20px;
+        width: 5%;
+        flex-basis: 100%;
+    }
+
+    input{
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 375px){
+	.calculadora{
+        width: 80%;
+    }
+
+    .buttons{
+        padding-left: 5px;
+        padding-right: 5px;
+        flex-basis: 100%;
+    }
+
+    .button {
+        margin: 10px;
+        padding: 10px 20px;
+        width: 5%;
+        flex-basis: 100%;
+    }
+
+    input{
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 369px){
+	.calculadora{
+        width: 90%;
+    }
+
+    .buttons{
+        padding-left: 1px;
+        padding-right: 1px;
+        flex-basis: 100%;
+    }
+
+    .button {
+        margin: 1px;
+        padding: 1px 1px;
+        width: 1%;
+        flex-basis: 100%;
+    }
+
+    input{
+        height: 100px;
+    }
 }
