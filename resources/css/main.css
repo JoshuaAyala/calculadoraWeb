@@ -53,7 +53,9 @@ h3 {
     -ms-border-radius: 100px;
     -o-border-radius: 100px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.644);
+    flex-basis: 100%;
 }
+
 
 .button:hover{
     transition: 0.3s;
